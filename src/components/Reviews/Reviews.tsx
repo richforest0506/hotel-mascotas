@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Reviews = () => {
 	return (
 		<section className='bg-gray-50' id='reviews'>
