@@ -7,7 +7,7 @@ import Stats from './Stats';
 
 function App() {
 	return (
-		<div className='bg-gray-50'>
+		<div className='bg-gray-900'>
 			<Navbar />
 			<Hero />
 			<Stats />

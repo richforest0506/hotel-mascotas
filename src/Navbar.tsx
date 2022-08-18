@@ -1,30 +1,39 @@
 import React from 'react';
 
 const Navbar = () => {
+	const img = require('./biale.png');
+
 	return (
-		<nav className='flex items-center justify-between max-w-3xl p-4 mx-auto bg-gray-50'>
-			<a className='inline-flex items-center justify-center w-10 h-10 bg-gray-100 rounded-lg' href='/'>
-				👋
+		<nav className='flex items-center justify-between max-w-3xl p-4 mx-auto bg-gray-900'>
+			<a className='inline-flex items-center justify-center bg-gray-900 rounded-lg' href='/'>
+				<img src={img} alt='Mascotas logo' className='w-26 h-16' />
 			</a>
 
 			<ul className='flex items-center space-x-2 text-sm font-medium text-gray-500'>
 				<li className='hidden lg:block'>
-					<a className='px-3 py-2 rounded-lg' href='/'>
+					<a className='px-3 py-2 rounded-lg text-gray-50' href='#details'>
 						{' '}
-						Home{' '}
+						Szczegóły{' '}
+					</a>
+				</li>
+
+				<li className='hidden lg:block'>
+					<a className='px-3 py-2 rounded-lg text-gray-50' href='#reviews'>
+						{' '}
+						Opinie{' '}
 					</a>
 				</li>
 
 				<li>
-					<a className='px-3 py-2 rounded-lg' href=''>
+					<a className='px-3 py-2 rounded-lg text-gray-50' href='#contact'>
 						{' '}
-						Projects{' '}
+						Kontakt{' '}
 					</a>
 				</li>
 
 				<li>
-					<a className='inline-flex items-center px-3 py-2 rounded-lg' href='' target='_blank'>
-						External
+					<a className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50' href='#contact' target='_blank'>
+						FAQ
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'

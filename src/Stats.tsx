@@ -2,7 +2,7 @@ import React from 'react';
 
 const Stats = () => {
 	return (
-		<section className='text-white bg-gray-900'>
+		<section className='text-white bg-gray-900' id='details'>
 			<div className='max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8'>
 				<div className='max-w-lg mx-auto text-center'>
 					<h2 className='text-3xl font-bold sm:text-4xl'>Kickstart your marketing</h2>
@@ -180,7 +180,7 @@ const Stats = () => {
 				<div className='mt-12 text-center'>
 					<a
 						className='inline-flex items-center px-8 py-3 mt-8 text-white bg-indigo-600 border border-indigo-600 rounded hover:bg-transparent active:text-indigo-600 focus:outline-none focus:ring'
-						href='/get-started'>
+						href='#contact'>
 						<span className='text-sm font-medium'> Get Started </span>
 
 						<svg
