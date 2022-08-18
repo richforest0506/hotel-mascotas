@@ -1,9 +1,9 @@
-import Footer from './Footer';
-import Form from './Form';
-import Hero from './Hero';
-import Navbar from './Navbar';
-import Reviews from './Reviews';
-import Stats from './Stats';
+import Footer from './components/Footer/Footer';
+import Form from './components/Form/Form';
+import Hero from './components/Hero/Hero';
+import Navbar from './components/Navbar/Navbar';
+import Reviews from './components/Reviews/Reviews';
+import Stats from './components/Stats/Stats';
 
 function App() {
 	return (

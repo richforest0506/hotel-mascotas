@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
-	const img = require('./biale.png');
+	const img = require('../../images/logo.png');
 
 	return (
 		<nav className='flex items-center justify-between max-w-3xl p-4 mx-auto bg-gray-900'>
@@ -11,28 +12,46 @@ const Navbar = () => {
 
 			<ul className='flex items-center space-x-2 text-sm font-medium text-gray-500'>
 				<li className='hidden lg:block'>
-					<a className='px-3 py-2 rounded-lg text-gray-50' href='#details'>
+					<Link
+						spy
+						smooth
+						duration={500}
+						className='px-3 py-2 rounded-lg cursor-pointer text-gray-50 transition hover:text-white/75'
+						to='details'>
 						{' '}
 						Szczegóły{' '}
-					</a>
+					</Link>
 				</li>
 
 				<li className='hidden lg:block'>
-					<a className='px-3 py-2 rounded-lg text-gray-50' href='#reviews'>
+					<Link
+						spy
+						smooth
+						duration={500}
+						className='px-3 py-2 rounded-lg cursor-pointer text-gray-50 transition hover:text-white/75'
+						to='reviews'>
 						{' '}
 						Opinie{' '}
-					</a>
+					</Link>
 				</li>
 
 				<li>
-					<a className='px-3 py-2 rounded-lg text-gray-50' href='#contact'>
+					<Link
+						spy
+						smooth
+						duration={500}
+						className='px-3 py-2 rounded-lg cursor-pointer text-gray-50 transition hover:text-white/75'
+						to='contact'>
 						{' '}
 						Kontakt{' '}
-					</a>
+					</Link>
 				</li>
 
 				<li>
-					<a className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50' href='#contact' target='_blank'>
+					<a
+						className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50 transition hover:text-white/75'
+						href='#contact'
+						target='_blank'>
 						FAQ
 						<svg
 							xmlns='http://www.w3.org/2000/svg'

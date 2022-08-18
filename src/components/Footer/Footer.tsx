@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
-	const img = require('./biale.png');
+	const img = require('../../images/logo.png');
 
 	return (
 		<footer className='bg-gray-900'>
@@ -21,21 +22,36 @@ const Footer = () => {
 
 					<ul className='flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12'>
 						<li>
-							<a className='text-white transition hover:text-white/75' href='#details'>
+							<Link
+								spy
+								smooth
+								duration={500}
+								className='text-white transition hover:text-white/75 cursor-pointer'
+								to='details'>
 								Szczegóły
-							</a>
+							</Link>
 						</li>
 
 						<li>
-							<a className='text-white transition hover:text-white/75' href='#reviews'>
+							<Link
+								spy
+								smooth
+								duration={500}
+								className='text-white transition hover:text-white/75 cursor-pointer'
+								to='reviews'>
 								Opinie
-							</a>
+							</Link>
 						</li>
 
 						<li>
-							<a className='text-white transition hover:text-white/75' href='#contact'>
+							<Link
+								spy
+								smooth
+								duration={500}
+								className='text-white transition hover:text-white/75 cursor-pointer'
+								to='contact'>
 								Contact
-							</a>
+							</Link>
 						</li>
 
 						<li>
@@ -48,7 +64,11 @@ const Footer = () => {
 
 				<ul className='flex justify-center gap-6 mt-12 md:gap-8'>
 					<li>
-						<a href='/' rel='noopener noreferrer' target='_blank' className='text-white transition hover:text-white/75'>
+						<a
+							href='https://www.facebook.com/hotelmascotaspl'
+							rel='noopener noreferrer'
+							target='_blank'
+							className='text-white transition hover:text-white/75'>
 							<span className='sr-only'>Facebook</span>
 							<svg className='w-6 h-6' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
 								<path
