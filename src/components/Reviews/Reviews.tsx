@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Reviews = () => {
 	return (
 		<section className='bg-gray-50' id='reviews'>
@@ -96,17 +94,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>The best thing money can buy!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Czysto i zadbanie!</p>
 						</header>
 
 						<p className='mt-2 text-gray-700'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus fuga dolor rerum dicta, ipsum
-							laboriosam est totam iusto alias incidunt cum tempore aliquid aliquam error quisquam ipsam asperiores!
-							Iste?
+							Nie znam lepszego miejsca do którego mogłabym oddać swoją kochaną kotkę. Pięknie urządzone kocie pokoiki,
+							dużo zabawek i drapaków, wszędzie czyściutko, a do tego bardzo sympatyczna właścicielka. Dziękujemy za
+							opiekę.
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>John Doe - 12th January, 2024</p>
+							<p className='text-xs text-gray-500'>Aurelia Skrzypczak</p>
 						</footer>
 					</blockquote>
 
@@ -150,17 +148,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>The best thing money can buy!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Kot miał lepsze wakacje ode mnie!</p>
 						</header>
 
 						<p className='mt-2 text-gray-700'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus fuga dolor rerum dicta, ipsum
-							laboriosam est totam iusto alias incidunt cum tempore aliquid aliquam error quisquam ipsam asperiores!
-							Iste?
+							Moje dwa kotki nie chciały odjeżdżać z tego hotelu - takie miały super wakacje! Pani Dominika świetnie się
+							nimi zaopiekowała i koty były strasznie szczęśliwe - była to nasza pierwsza wizyta. Polecam z całego serca
+							Hotel Mascotas!
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>John Doe - 12th January, 2024</p>
+							<p className='text-xs text-gray-500'>Joanna Budzińska</p>
 						</footer>
 					</blockquote>
 
@@ -204,17 +202,16 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>The best thing money can buy!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Idealne miejsce dla pociechy</p>
 						</header>
 
 						<p className='mt-2 text-gray-700'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus fuga dolor rerum dicta, ipsum
-							laboriosam est totam iusto alias incidunt cum tempore aliquid aliquam error quisquam ipsam asperiores!
-							Iste?
+							Bardzo schludnie i czysto. Ekskluzywne miejsce dla ukochanego kotka na czas urlopu lub wyjazdu służbowego.
+							Teren dla kociaków ogrodzony, brak możliwości ucieczki dla milusińskich. Zdecydowanie polecam.
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>John Doe - 12th January, 2024</p>
+							<p className='text-xs text-gray-500'>Łukasz Łukaszewicz</p>
 						</footer>
 					</blockquote>
 
@@ -258,17 +255,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>The best thing money can buy!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Koty czuły się jak w domu</p>
 						</header>
 
 						<p className='mt-2 text-gray-700'>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam possimus fuga dolor rerum dicta, ipsum
-							laboriosam est totam iusto alias incidunt cum tempore aliquid aliquam error quisquam ipsam asperiores!
-							Iste?
+							Idealne miejsce do pozostawienia kociaka jeśli zajdzie taka konieczność. Hotel jest prowadzony z pasją i
+							zwierzęta mają prawo czuć się tu prawie jak w domu. Świetny kontakt z właścicielami i znakomite warunki.
+							Gorąco polecam!
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>John Doe - 12th January, 2024</p>
+							<p className='text-xs text-gray-500'>Daniel Oliwa</p>
 						</footer>
 					</blockquote>
 				</div>
