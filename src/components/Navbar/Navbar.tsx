@@ -1,6 +1,11 @@
+import { Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 
-const Navbar = () => {
+interface INavbarProps {
+	setShowFAQ: Dispatch<SetStateAction<boolean>>;
+}
+
+const Navbar = ({ setShowFAQ }: INavbarProps) => {
 	const img = require('../../images/logo.png');
 
 	return (
@@ -47,24 +52,11 @@ const Navbar = () => {
 				</li>
 
 				<li>
-					<a
-						className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50 transition hover:text-white/75'
-						href='#contact'
-						target='_blank'>
+					<p
+						className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50 transition hover:text-white/75 cursor-pointer'
+						onClick={() => setShowFAQ(prevState => !prevState)}>
 						FAQ
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							fill='none'
-							viewBox='0 0 24 24'
-							stroke='currentColor'
-							className='ml-1.5 w-4 h-4'>
-							<path
-								strokeLinecap='round'
-								strokeLinejoin='round'
-								strokeWidth='2'
-								d='M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14'></path>
-						</svg>
-					</a>
+					</p>
 				</li>
 			</ul>
 		</nav>

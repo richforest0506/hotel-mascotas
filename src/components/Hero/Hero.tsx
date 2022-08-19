@@ -15,7 +15,7 @@ const Hero = () => {
 						spokój rodzicom pociech oraz najlepsze wakacje dla przyjezdnych.
 					</p>
 
-					<div className='flex flex-wrap justify-center gap-4 mt-8'>
+					<div className='flex flex-wrap justify-center gap-4 mt-8 cursor-pointer'>
 						<Link
 							spy
 							smooth
