@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
 import { Link as RouterLink } from 'react-router-dom';
-import Faq from '../FAQ/Faq';
 
 const Navbar = () => {
 	const img = require('../../images/logo.png');
