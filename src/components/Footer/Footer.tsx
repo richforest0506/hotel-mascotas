@@ -15,7 +15,7 @@ const Footer = ({ setShowFAQ }: IFooterProps) => {
 					<img src={img} alt='Mascotas logo' className='w-26 h-16' />
 				</div>
 
-				<p className='max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400'>
+				<p className='max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-400 cursor-default'>
 					Wszystkie przydatne linki w jednym miejscu właśnie dla ciebie, w razie wątpliwości zapraszamy do kontaktu.
 				</p>
 
@@ -54,7 +54,7 @@ const Footer = ({ setShowFAQ }: IFooterProps) => {
 								duration={500}
 								className='text-white transition hover:text-white/75 cursor-pointer'
 								to='contact'>
-								Contact
+								Kontakt
 							</Link>
 						</li>
 

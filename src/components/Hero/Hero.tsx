@@ -6,11 +6,11 @@ const Hero = () => {
 			<div className='max-w-screen-xl px-4 py-32 mx-auto lg:h-screen lg:items-center lg:flex'>
 				<div className='max-w-3xl mx-auto text-center'>
 					<h1 className='text-3xl font-extrabold text-transparent sm:text-5xl bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600'>
-						<span className='sm:block'>Profesjonalna opieka.</span>
-						<span className='sm:block'>Spokojny właściciel.</span>
+						<span className='sm:block cursor-default'>Profesjonalna opieka.</span>
+						<span className='sm:block cursor-default'>Spokojny właściciel.</span>
 					</h1>
 
-					<p className='max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl'>
+					<p className='max-w-xl mx-auto mt-4 sm:leading-relaxed sm:text-xl cursor-default'>
 						Jesteśmy hotelem dla kotów który stawia na komfort futrzaków oraz właścicieli ponad wszystko, zapewniamy
 						spokój rodzicom pociech oraz najlepsze wakacje dla przyjezdnych.
 					</p>

@@ -14,16 +14,16 @@ const Stats = () => {
 		<section className='text-white bg-gray-900' id='details'>
 			<div className='max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8'>
 				<div className='max-w-lg mx-auto text-center'>
-					<h2 className='text-3xl font-bold sm:text-4xl'>Oddaj kota w zaufane ręce</h2>
+					<h2 className='text-3xl font-bold sm:text-4xl cursor-default'>Oddaj kota w zaufane ręce</h2>
 
-					<p className='mt-4 text-gray-300'>
+					<p className='mt-4 text-gray-300 cursor-default'>
 						Hotel działa na podstawie kilku wartości które sprawiają, że nasza współpraca z klientami i opieka nad
 						zwierzakami przebiega bezproblemowo i w jak najprzyjemniejszej atmosferze. Przekonaj się sam.
 					</p>
 				</div>
 
 				<div className='grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3'>
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10  cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faDroplet} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Spokój i wygoda</h3>
@@ -35,7 +35,7 @@ const Stats = () => {
 						</p>
 					</div>
 
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10 cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faCloudMoon} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Indywidualne podejście</h3>
@@ -47,7 +47,7 @@ const Stats = () => {
 						</p>
 					</div>
 
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10 cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faHandshakeAngle} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Służymy pomocą</h3>
@@ -59,7 +59,7 @@ const Stats = () => {
 						</p>
 					</div>
 
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10 cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faHouseChimneyUser} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Rodzinna atmosfera</h3>
@@ -71,7 +71,7 @@ const Stats = () => {
 						</p>
 					</div>
 
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10 cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faMountainSun} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Udany wypoczynek</h3>
@@ -83,7 +83,7 @@ const Stats = () => {
 						</p>
 					</div>
 
-					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10'>
+					<div className='block p-8 transition border border-gray-800 shadow-xl rounded-xl hover:shadow-indigo-600/10 hover:border-indigo-600/10 cursor-default'>
 						<FontAwesomeIcon className='w-10 h-10 text-indigo-600' icon={faHeartCircleCheck} />
 
 						<h3 className='mt-4 text-xl font-bold text-white'>Pasja to miłość</h3>
@@ -102,7 +102,7 @@ const Stats = () => {
 						duration={500}
 						className='inline-flex items-center px-8 py-3 mt-8 text-white bg-indigo-600 border border-indigo-600 rounded hover:bg-transparent active:text-indigo-600 focus:outline-none focus:ring cursor-pointer'
 						to='contact'>
-						<span className='text-sm font-medium'> Get Started </span>
+						<span className='text-sm font-medium'>Skontaktuj się z nami</span>
 
 						<svg
 							className='w-5 h-5 ml-3'
