@@ -1,11 +1,7 @@
-import { Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 
-interface IFooterProps {
-	setShowFAQ: Dispatch<SetStateAction<boolean>>;
-}
-
-const Footer = ({ setShowFAQ }: IFooterProps) => {
+const Footer = () => {
 	const img = require('../../images/logo.png');
 
 	return (
@@ -57,14 +53,11 @@ const Footer = ({ setShowFAQ }: IFooterProps) => {
 								Kontakt
 							</Link>
 						</li>
-
-						<li>
-							<p
-								className='text-white transition hover:text-white/75 cursor-pointer'
-								onClick={() => setShowFAQ(prevState => !prevState)}>
-								FAQ
-							</p>
-						</li>
+						<RouterLink to='/faq'>
+							<li>
+								<p className='text-white transition hover:text-white/75 cursor-pointer'>FAQ</p>
+							</li>
+						</RouterLink>
 					</ul>
 				</nav>
 

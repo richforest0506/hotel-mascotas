@@ -1,15 +1,12 @@
-import { Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
+import Faq from '../FAQ/Faq';
 
-interface INavbarProps {
-	setShowFAQ: Dispatch<SetStateAction<boolean>>;
-}
-
-const Navbar = ({ setShowFAQ }: INavbarProps) => {
+const Navbar = () => {
 	const img = require('../../images/logo.png');
 
 	return (
-		<nav className='flex items-center justify-between max-w-3xl p-4 mx-auto bg-gray-900'>
+		<nav className='flex items-center justify-between w-full p-4 px-16 mx-auto bg-gray-900'>
 			<a className='inline-flex items-center justify-center bg-gray-900 rounded-lg' href='/'>
 				<img src={img} alt='Mascotas logo' className='w-26 h-16' />
 			</a>
@@ -50,14 +47,11 @@ const Navbar = ({ setShowFAQ }: INavbarProps) => {
 						Kontakt{' '}
 					</Link>
 				</li>
-
-				<li>
-					<p
-						className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50 transition hover:text-white/75 cursor-pointer'
-						onClick={() => setShowFAQ(prevState => !prevState)}>
-						FAQ
-					</p>
-				</li>
+				<RouterLink
+					className='inline-flex items-center px-3 py-2 rounded-lg text-gray-50 transition hover:text-white/75 cursor-pointer'
+					to='/faq'>
+					FAQ
+				</RouterLink>
 			</ul>
 		</nav>
 	);
