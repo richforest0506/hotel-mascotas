@@ -1,4 +1,10 @@
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+	faArrowLeft,
+	faHotel,
+	faMoneyBill1Wave,
+	faClipboardList,
+	faEllipsisVertical,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -14,16 +20,24 @@ const FaqProcedures = () => {
 				</RouterLink>
 				<nav className='p-6 flex text-sm pt-0 font-medium border-b border-gray-100'>
 					<RouterLink to='/faq'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Hotel</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Hotel <FontAwesomeIcon className='hidden sm:inline-block' icon={faHotel} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/price'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Cennik</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Cennik <FontAwesomeIcon className='hidden sm:inline-block' icon={faMoneyBill1Wave} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/procedures'>
-						<p className='p-4 -mb-px border-b border-current text-indigo-600 cursor-pointer'>Procedury</p>
+						<p className='p-4 -mb-px border-b border-current text-indigo-600 cursor-pointer'>
+							Procedury <FontAwesomeIcon className='hidden sm:inline-block' icon={faClipboardList} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/other'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Inne</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Inne <FontAwesomeIcon className='hidden sm:inline-block' icon={faEllipsisVertical} />
+						</p>
 					</RouterLink>
 				</nav>
 

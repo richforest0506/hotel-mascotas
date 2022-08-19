@@ -1,4 +1,10 @@
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+	faArrowLeft,
+	faClipboardList,
+	faEllipsisVertical,
+	faHotel,
+	faMoneyBill1Wave,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link as RouterLink } from 'react-router-dom';
 
@@ -14,16 +20,24 @@ const FaqPrice = () => {
 				</RouterLink>
 				<nav className='p-6 flex text-sm pt-0 font-medium border-b border-gray-100'>
 					<RouterLink to='/faq'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Hotel</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Hotel <FontAwesomeIcon className='hidden sm:inline-block' icon={faHotel} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/price'>
-						<p className='p-4 -mb-px border-b border-current text-indigo-600 cursor-pointer'>Cennik</p>
+						<p className='p-4 -mb-px border-b border-current text-indigo-600 cursor-pointer'>
+							Cennik <FontAwesomeIcon className='hidden sm:inline-block' icon={faMoneyBill1Wave} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/procedures'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Procedury</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Procedury <FontAwesomeIcon className='hidden sm:inline-block' icon={faClipboardList} />
+						</p>
 					</RouterLink>
 					<RouterLink to='/faq/other'>
-						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>Inne</p>
+						<p className='p-4 -mb-px border-b border-transparent hover:text-indigo-600 cursor-pointer'>
+							Inne <FontAwesomeIcon className='hidden sm:inline-block' icon={faEllipsisVertical} />
+						</p>
 					</RouterLink>
 				</nav>
 
@@ -46,7 +60,48 @@ const FaqPrice = () => {
 						<br />3 koty - 83zł/dobę
 					</p>
 				</div>
-				<details className='p-6 rounded-lg bg-gray-50 group' open>
+				<details className='p-6 rounded-lg bg-gray-50 group'>
+					<summary className='flex items-center justify-between cursor-pointer'>
+						<h5 className='font-medium text-gray-900'>Jak wygląda opłata za pobyt?</h5>
+
+						<span className='relative flex-shrink-0 ml-1.5 w-5 h-5'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 opacity-100 group-open:opacity-0'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								strokeWidth='2'>
+								<path
+									strokeLinecap='round'
+									strokeLinejoin='round'
+									d='M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
+								/>
+							</svg>
+
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 opacity-0 group-open:opacity-100'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								strokeWidth='2'>
+								<path strokeLinecap='round' strokeLinejoin='round' d='M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z' />
+							</svg>
+						</span>
+					</summary>
+
+					<p className='mt-4 leading-relaxed text-gray-700'>
+						{' '}
+						Płatności za pobyt przyjmowane są z góry. Opłacenie rezerwacji to 50% ceny pobytu - w przypadku rezygnacji
+						wpłata nie podlega zwrotowi. Ceny pobytu za pokój nie posiadają żadnych ukrytych płatności. Nr konta do
+						opłacenia rezerwacji:
+						<br />
+						<br />
+						Dominika Grabowska CREDIT AGRICOLE <span className='text-indigo-700'>74 1940 1076 5934 7369 0000 0000</span>
+					</p>
+				</details>
+				<details className='p-6 rounded-lg bg-gray-50 group'>
 					<summary className='flex items-center justify-between cursor-pointer'>
 						<h5 className='font-medium text-gray-900'>Co w razie potrzeby wizyty u weterynarza?</h5>
 
