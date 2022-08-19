@@ -1,8 +1,13 @@
+import { faUserGraduate } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Form = () => {
 	return (
 		<div className='w-full px-4 py-16 mx-auto sm:px-6 lg:px-8 bg-gray-50' id='contact'>
 			<div className='max-w-lg mx-auto'>
-				<h1 className='text-2xl font-bold text-center text-indigo-600 sm:text-3xl'>Dowiedz się więcej</h1>
+				<h1 className='text-2xl font-bold text-center text-indigo-600 sm:text-3xl'>
+					Dowiedz się więcej <FontAwesomeIcon className='w-8 h-8 text-indigo-600' icon={faUserGraduate} />
+				</h1>
 
 				<p className='max-w-md mx-auto mt-4 text-center text-gray-500'>
 					Już dziś napisz do Nas wiadomość, a my postaramy się rozwiać twoje wszystkie wątpliwości! Przed wysłaniem

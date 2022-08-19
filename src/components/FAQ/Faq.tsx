@@ -1,57 +1,98 @@
-const Faq = () => {
+import { Dispatch, SetStateAction } from 'react';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+interface IFAQProps {
+	setShowFAQ: Dispatch<SetStateAction<boolean>>;
+}
+
+const Faq = ({ setShowFAQ }: IFAQProps) => {
 	return (
-		<div className='space-y-4'>
-			<details className='p-6 border-l-4 border-green-500 bg-gray-50 group' open>
-				<summary className='flex items-center justify-between cursor-pointer'>
-					<h5 className='text-lg font-medium text-gray-900'>Lorem ipsum dolor sit amet consectetur adipisicing?</h5>
+		<div className='flex flex-col justify-center items-center'>
+			<div className='space-y-4 max-w-4xl'>
+				<button
+					className='relative shrink-0 m-6 p-3 inline-block text-indigo-600 border border-indigo-600 rounded-full hover:text-white hover:bg-indigo-600 active:bg-indigo-500 focus:outline-none focus:ring w-10 h-10'
+					onClick={() => setShowFAQ(prevState => !prevState)}>
+					<span className='sr-only'> Cofnij </span>
+					<FontAwesomeIcon className='absolute top-50 left-50 -translate-y-2/4 -translate-x-2/4' icon={faArrowLeft} />
+				</button>
 
-					<span className='flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3'>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							className='flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45'
-							viewBox='0 0 20 20'
-							fill='currentColor'>
-							<path
-								fillRule='evenodd'
-								d='M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z'
-								clipRule='evenodd'
-							/>
-						</svg>
-					</span>
-				</summary>
+				<details className='p-6 rounded-lg bg-gray-50 group' open>
+					<summary className='flex items-center justify-between cursor-pointer'>
+						<h5 className='font-medium text-gray-900'>Lorem ipsum dolor sit amet consectetur adipisicing?</h5>
 
-				<p className='mt-4 leading-relaxed text-gray-700'>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae
-					laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-					corporis earum similique!
-				</p>
-			</details>
+						<span className='relative flex-shrink-0 ml-1.5 w-5 h-5'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 w-5 h-5 opacity-100 group-open:opacity-0'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								stroke-width='2'>
+								<path
+									stroke-linecap='round'
+									stroke-linejoin='round'
+									d='M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
+								/>
+							</svg>
 
-			<details className='p-6 border-l-4 border-green-500 bg-gray-50 group'>
-				<summary className='flex items-center justify-between cursor-pointer'>
-					<h5 className='text-lg font-medium text-gray-900'>Lorem ipsum dolor sit amet consectetur adipisicing?</h5>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 w-5 h-5 opacity-0 group-open:opacity-100'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								stroke-width='2'>
+								<path stroke-linecap='round' stroke-linejoin='round' d='M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z' />
+							</svg>
+						</span>
+					</summary>
 
-					<span className='flex-shrink-0 ml-1.5 p-1.5 text-gray-900 bg-white rounded-full sm:p-3'>
-						<svg
-							xmlns='http://www.w3.org/2000/svg'
-							className='flex-shrink-0 w-5 h-5 transition duration-300 group-open:-rotate-45'
-							viewBox='0 0 20 20'
-							fill='currentColor'>
-							<path
-								fillRule='evenodd'
-								d='M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z'
-								clipRule='evenodd'
-							/>
-						</svg>
-					</span>
-				</summary>
+					<p className='mt-4 leading-relaxed text-gray-700'>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae
+						laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+						corporis earum similique!
+					</p>
+				</details>
 
-				<p className='mt-4 leading-relaxed text-gray-700'>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae
-					laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
-					corporis earum similique!
-				</p>
-			</details>
+				<details className='p-6 rounded-lg bg-gray-50 group'>
+					<summary className='flex items-center justify-between cursor-pointer'>
+						<h5 className='font-medium text-gray-900'>Lorem ipsum dolor sit amet consectetur adipisicing?</h5>
+
+						<span className='relative flex-shrink-0 ml-1.5 w-5 h-5'>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 opacity-100 group-open:opacity-0'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								stroke-width='2'>
+								<path
+									stroke-linecap='round'
+									stroke-linejoin='round'
+									d='M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z'
+								/>
+							</svg>
+
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								className='absolute inset-0 opacity-0 group-open:opacity-100'
+								fill='none'
+								viewBox='0 0 24 24'
+								stroke='currentColor'
+								stroke-width='2'>
+								<path stroke-linecap='round' stroke-linejoin='round' d='M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z' />
+							</svg>
+						</span>
+					</summary>
+
+					<p className='mt-4 leading-relaxed text-gray-700'>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis molestias culpa in, recusandae
+						laboriosam neque aliquid libero nesciunt voluptate dicta quo officiis explicabo consequuntur distinctio
+						corporis earum similique!
+					</p>
+				</details>
+			</div>
 		</div>
 	);
 };

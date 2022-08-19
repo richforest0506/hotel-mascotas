@@ -1,6 +1,11 @@
+import { Dispatch, SetStateAction } from 'react';
 import { Link } from 'react-scroll';
 
-const Footer = () => {
+interface IFooterProps {
+	setShowFAQ: Dispatch<SetStateAction<boolean>>;
+}
+
+const Footer = ({ setShowFAQ }: IFooterProps) => {
 	const img = require('../../images/logo.png');
 
 	return (
@@ -54,9 +59,11 @@ const Footer = () => {
 						</li>
 
 						<li>
-							<a className='text-white transition hover:text-white/75' href='#contact'>
+							<p
+								className='text-white transition hover:text-white/75 cursor-pointer'
+								onClick={() => setShowFAQ(prevState => !prevState)}>
 								FAQ
-							</a>
+							</p>
 						</li>
 					</ul>
 				</nav>
