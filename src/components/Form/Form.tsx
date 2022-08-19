@@ -41,7 +41,7 @@ const Form: React.FC<IFormProps> = ({ setPopUp, setErrorPopUp }: IFormProps) => 
 
 				<p className='max-w-md mx-auto mt-4 text-center text-gray-500 cursor-default'>
 					Już dziś napisz do Nas wiadomość, a my postaramy się rozwiać twoje wszystkie wątpliwości! Przed wysłaniem
-					zobacz zakładkę FAQ.
+					zobacz zakładkę info.
 				</p>
 
 				<form onSubmit={sendEmail} ref={formRef} className='p-8 mt-6 mb-0 space-y-4 rounded-lg shadow-2xl'>

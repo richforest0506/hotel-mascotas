@@ -1,7 +1,10 @@
 import { useState, CSSProperties, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { CircleLoader } from 'react-spinners';
-import Faq from './components/FAQ/Faq';
+import FaqHotel from './components/FAQ/sections/FaqHotel';
+import FaqOthers from './components/FAQ/sections/FaqOthers';
+import FaqPrice from './components/FAQ/sections/FaqPrice';
+import FaqProcedures from './components/FAQ/sections/FaqProcedures';
 import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
 import Hero from './components/Hero/Hero';
@@ -63,7 +66,10 @@ const App: React.FC = () => {
 									</>
 								}
 							/>
-							<Route path='/faq' element={<Faq />} />
+							<Route path='/faq' element={<FaqHotel />} />
+							<Route path='/faq/price' element={<FaqPrice />} />
+							<Route path='/faq/procedures' element={<FaqProcedures />} />
+							<Route path='/faq/other' element={<FaqOthers />} />
 						</Routes>
 					</div>
 				)}
