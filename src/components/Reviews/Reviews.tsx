@@ -2,12 +2,12 @@ const Reviews = () => {
 	return (
 		<section className='bg-gray-50' id='reviews'>
 			<div className='max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8'>
-				<h2 className='text-xl font-bold sm:text-2xl'>Opinie klientów</h2>
+				<h2 className='text-xl font-bold sm:text-2xl cursor-default'>Opinie klientów</h2>
 
 				<div className='flex items-center mt-4'>
 					<p className='text-3xl font-medium'>
 						4.98
-						<span className='sr-only'> Średni wynik ocen </span>
+						<span className='sr-only cursor-default'> Średni wynik ocen </span>
 					</p>
 
 					<div className='ml-4'>
@@ -49,7 +49,7 @@ const Reviews = () => {
 							</svg>
 						</div>
 
-						<p className='mt-0.5 text-xs text-gray-500'>Na podstawie 135 opinii</p>
+						<p className='mt-0.5 text-xs text-gray-500 cursor-default'>Na podstawie 135 opinii</p>
 					</div>
 				</div>
 
@@ -94,17 +94,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Czysto i zadbanie!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0 cursor-default'>Czysto i zadbanie!</p>
 						</header>
 
-						<p className='mt-2 text-gray-700'>
+						<p className='mt-2 text-gray-700 cursor-default'>
 							Nie znam lepszego miejsca do którego mogłabym oddać swoją kochaną kotkę. Pięknie urządzone kocie pokoiki,
 							dużo zabawek i drapaków, wszędzie czyściutko, a do tego bardzo sympatyczna właścicielka. Dziękujemy za
 							opiekę.
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>Aurelia Skrzypczak</p>
+							<p className='text-xs text-gray-500 cursor-default'>Aurelia Skrzypczak</p>
 						</footer>
 					</blockquote>
 
@@ -148,17 +148,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Kot miał lepsze wakacje ode mnie!</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0 cursor-default'>Kot miał lepsze wakacje ode mnie!</p>
 						</header>
 
-						<p className='mt-2 text-gray-700'>
+						<p className='mt-2 text-gray-700 cursor-default'>
 							Moje dwa kotki nie chciały odjeżdżać z tego hotelu - takie miały super wakacje! Pani Dominika świetnie się
 							nimi zaopiekowała i koty były strasznie szczęśliwe - była to nasza pierwsza wizyta. Polecam z całego serca
 							Hotel Mascotas!
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>Joanna Budzińska</p>
+							<p className='text-xs text-gray-500 cursor-default'>Joanna Budzińska</p>
 						</footer>
 					</blockquote>
 
@@ -202,16 +202,16 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Idealne miejsce dla pociechy</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0 cursor-default'>Idealne miejsce dla pociechy</p>
 						</header>
 
-						<p className='mt-2 text-gray-700'>
+						<p className='mt-2 text-gray-700 cursor-default'>
 							Bardzo schludnie i czysto. Ekskluzywne miejsce dla ukochanego kotka na czas urlopu lub wyjazdu służbowego.
 							Teren dla kociaków ogrodzony, brak możliwości ucieczki dla milusińskich. Zdecydowanie polecam.
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>Łukasz Łukaszewicz</p>
+							<p className='text-xs text-gray-500 cursor-default'>Łukasz Łukaszewicz</p>
 						</footer>
 					</blockquote>
 
@@ -255,17 +255,17 @@ const Reviews = () => {
 								</svg>
 							</div>
 
-							<p className='mt-2 font-medium sm:ml-4 sm:mt-0'>Koty czuły się jak w domu</p>
+							<p className='mt-2 font-medium sm:ml-4 sm:mt-0 cursor-default'>Koty czuły się jak w domu</p>
 						</header>
 
-						<p className='mt-2 text-gray-700'>
+						<p className='mt-2 text-gray-700 cursor-default'>
 							Idealne miejsce do pozostawienia kociaka jeśli zajdzie taka konieczność. Hotel jest prowadzony z pasją i
 							zwierzęta mają prawo czuć się tu prawie jak w domu. Świetny kontakt z właścicielami i znakomite warunki.
 							Gorąco polecam!
 						</p>
 
 						<footer className='mt-4'>
-							<p className='text-xs text-gray-500'>Daniel Oliwa</p>
+							<p className='text-xs text-gray-500 cursor-default'>Daniel Oliwa</p>
 						</footer>
 					</blockquote>
 				</div>
